@@ -82,6 +82,34 @@
      glVertex3f(-2.0f, -0.1f, 2.0f);
      glVertex3f(-2.0f, 0.2f, 2.0f);
      glVertex3f(-2.0f, 0.2f, -2.0f);
+
+     //top dudukan
+     glNormal3f(0.0f,1.0f,0.0f);
+
+     glVertex3f(2.0f, 0.2f, 2.0f);
+     glVertex3f(-2.0f, 0.2f, 2.0f);
+     glVertex3f(-2.0f, 0.2f, -2.0f);
+     glVertex3f(2.0f, 0.2f, -2.0f);
+
+     //bottom bawa
+     glNormal3f(0.0f,-1.0f,0.0f);
+
+     glVertex3f(2.0f, -0.1f, 2.0f);
+     glVertex3f(-2.0f, -0.1f, 2.0f);
+     glVertex3f(-2.0f, -0.1f, -2.0f);
+     glVertex3f(2.0f, -0.1f, -2.0f);
+
+    //Keyboard
+     glColor3f(0.38f, 0.38f, 0.38f);
+     glVertex3f(1.8f, 0.21f, 0.8f);
+     glVertex3f(-1.8f, 0.21f, 0.8f);
+     glVertex3f(-1.8f, 0.21f, -1.7f);
+     glVertex3f(1.8f, 0.21f, -1.7f);
+    //Touchpad
+     glVertex3f(0.8f, 0.21f, 1.8f);
+     glVertex3f(-0.8f, 0.21f, 1.8f);
+     glVertex3f(-0.8f, 0.21f, 1.0f);
+     glVertex3f(0.8f, 0.21f, 1.0f);
     }
 
     int main(int argc, char** argv) {
