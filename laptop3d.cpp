@@ -54,6 +54,34 @@
       glColor3f(1.0f, 1.0f, 0.5f);
 
      glBegin(GL_QUADS);
+
+     //Front sisi depan
+     glNormal3f(0.0f, 0.0f, 1.0f);
+     glVertex3f(-2.0f, -0.1f, 2.0f);
+     glVertex3f(2.0f, -0.1f, 2.0f);
+     glVertex3f(2.0f, 0.2f, 2.0f);
+     glVertex3f(-2.0f, 0.2f, 2.0f);
+
+     //Right sisi kanan
+     glNormal3f(1.0f, 0.0f, 0.0f);
+     glVertex3f(2.0f, -0.1f, -2.0f);
+     glVertex3f(2.0f, 0.2f, -2.0f);
+     glVertex3f(2.0f, 0.2f, 2.0f);
+     glVertex3f(2.0f, -0.1f, 2.0f);
+
+     //Back sisi belakang
+     glNormal3f(0.0f, 0.0f, -1.0f);
+     glVertex3f(-2.0f, -0.1f, -2.0f);
+     glVertex3f(-2.0f, 0.2f, -2.0f);
+     glVertex3f(2.0f, 0.2f, -2.0f);
+     glVertex3f(2.0f, -0.1f, -2.0f);
+
+     //Left sisi kiri
+     glNormal3f(-1.0f, 0.0f, 0.0f);
+     glVertex3f(-2.0f, -0.1f, -2.0f);
+     glVertex3f(-2.0f, -0.1f, 2.0f);
+     glVertex3f(-2.0f, 0.2f, 2.0f);
+     glVertex3f(-2.0f, 0.2f, -2.0f);
     }
 
     int main(int argc, char** argv) {
