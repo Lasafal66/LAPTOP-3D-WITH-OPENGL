@@ -110,6 +110,57 @@
      glVertex3f(-0.8f, 0.21f, 1.8f);
      glVertex3f(-0.8f, 0.21f, 1.0f);
      glVertex3f(0.8f, 0.21f, 1.0f);
+
+     //chair back
+     //front depan atas
+     glColor3f(1.1f, 1.1f, 1.1f);
+     //glNormal3f(-1.0f, 0.0f, 0.0f);
+     glVertex3f(-2.0f, 0.2f, -1.8f);
+     glVertex3f(2.0f, 0.2f, -1.8f);
+     glVertex3f(2.0f, 3.5f, -1.8f);
+     glVertex3f(-2.0f, 3.5f, -1.8f);
+
+     //back belakang atas
+     //glNormal3f(-1.0f, 0.0f, 0.0f);
+     glVertex3f(-2.0f, 0.2f, -2.0f);
+     glVertex3f(2.0f, 0.2f, -2.0f);
+     glVertex3f(2.0f, 3.5f, -2.0f);
+     glVertex3f(-2.0f, 3.5f, -2.0f);
+
+     //samping kiri atas
+     // glNormal3f(-1.0f, 0.0f, 0.0f);
+     glVertex3f(-2.0f, 0.2f, -2.0f);
+     glVertex3f(-2.0f, 3.5f, -2.0f);
+     glVertex3f(-2.0f, 3.5f, -1.8f);
+     glVertex3f(-2.0f, 0.2f, -1.8f);
+
+     //samping kanan atas
+     glVertex3f(2.0f, 0.2f, -2.0f);
+     glVertex3f(2.0f, 3.5f, -2.0f);
+     glVertex3f(2.0f, 3.5f, -1.8f);
+     glVertex3f(2.0f, 0.2f, -1.8f);
+    //atas
+     glVertex3f(-1.8f, 3.5f, -2.0f);
+     glVertex3f(-1.8f, 3.5f, -1.8f);
+     glVertex3f(1.8f, 3.5f, -1.8f);
+        glVertex3f(1.8f, 3.5f, -2.0f);
+
+    //layar 1
+     glColor3f(0,0,0);//WARNA BGIAN LAYAR
+     glVertex3f(-1.95f, 0.25f, -1.75f);
+     glVertex3f(1.95f, 0.25f, -1.75f);
+     glVertex3f(1.95f, 3.45f, -1.75f);
+     glVertex3f(-1.95f, 3.45f, -1.75f);
+
+    //layar 2
+     glColor3f(2,2,2);//WARNA BGIAN LAYAR
+     glVertex3f(-1.7f, 0.5f, -1.73f);
+     glVertex3f(1.7f, 0.5f, -1.73f);
+     glVertex3f(1.7f, 3.2f, -1.73f);
+     glVertex3f(-1.7f, 3.2f, -1.73f);
+
+     glEnd();
+     glutSwapBuffers();
     }
 
     int main(int argc, char** argv) {
