@@ -1,7 +1,7 @@
 #include <windows.h>
 #include <GL/glut.h>
 
-//perubahan
+//perubahan ningsi
 
     //Initializes 3D rendering
     void initRendering() {
